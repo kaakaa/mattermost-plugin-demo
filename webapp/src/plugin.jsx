@@ -37,7 +37,16 @@ export default class DemoPlugin {
             <ChannelHeaderButtonIcon/>,
             () => store.dispatch(channelHeaderButtonAction()),
             'Demo Plugin',
+            'Demo Plugin Tooltip'
         );
+        /*
+        registry.registerChannelHeaderButtonAction(
+            <ChannelHeaderButtonIcon/>,
+            () => store.dispatch(channelHeaderButtonAction()),
+            'Demo Plugin2',
+            'Demo Plugin2 Tooltip'
+        );
+        */
 
         registry.registerPostTypeComponent('custom_demo_plugin', PostType);
 
